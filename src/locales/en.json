@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "languageCurrency": {
+      "languageButton": "Language",
+      "currencyButton": "Currency"
+    },
+    "support": "Support"
+  },
+  "footer": {
+    "message": "Ukrainian travel company, whose obligation is to deliver its customers from their homes to the exact adresses they need abroad with premium quality comfort.",
+    "legalDocuments": "Legal Documents",
+    "logoMessage": "Premium Buses",
+    "aboutButton": "About Marshrutka",
+    "newsButton": "Newsroom",
+    "mobileApp": {
+      "message": "Give our mobile app a try",
+      "description": "We'll notify you if the tickets price drops"
+    }
+  }
+}
