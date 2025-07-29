@@ -4,7 +4,8 @@
       "languageButton": "Language",
       "currencyButton": "Currency"
     },
-    "support": "Support"
+    "support": "Support",
+    "profile": "Profile"
   },
   "footer": {
     "message": "Ukrainian travel company, whose obligation is to deliver its customers from their homes to the exact adresses they need abroad with premium quality comfort.",
@@ -15,6 +16,28 @@
     "mobileApp": {
       "message": "Give our mobile app a try",
       "description": "We'll notify you if the tickets price drops"
+    }
+  },
+  "internalServerError": "An error has occured, try again...",
+  "authentication": {
+    "message": "Log in or create an account",
+    "description": "Unlock premium rewords with Marshrutka",
+    "or": "or",
+    "showPassword": "Show password",
+    "password": "Password",
+    "legalMessage": "By continuing, you have read and agree to our",
+    "termsLink": "Terms and Conditions",
+    "login": {
+      "name": "Log in",
+      "google": "Log in with Google",
+      "changeFormMessage": "Don't have an account?"
+    },
+    "singup": {
+      "name": "Sing up",
+      "google": "Sing up with Google",
+      "changeFormMessage": "Already have an account?",
+      "firstName": "First name",
+      "lastName": "Last name"
     }
   }
 }

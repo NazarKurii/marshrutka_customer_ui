@@ -6,9 +6,10 @@ import { useI18n } from 'vue-i18n'
 import { useResolutionStore } from '@/stores/resolutionStore'
 
 export function startApp(router: Router) {
-  router.push({ name: 'connections' })
   const app = useAppStore()
   app.currency = getSavedCurrency()
   app.language = getSavedLanguage()
   useResolutionStore().init()
 }
+
+export const appUrl = import.meta.env.APP_URL

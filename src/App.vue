@@ -2,12 +2,7 @@
   <div
     class="flex flex-col justify-between w-screen h-screen bg-neutral-900 items-center px-[30px] overflow-y-scroll"
   >
-    <div class="flex flex-col max-w-[1530px] w-full">
-      <Header />
-
-      <router-view></router-view>
-    </div>
-    <Footer />
+    <router-view></router-view>
   </div>
 </template>
 

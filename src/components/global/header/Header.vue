@@ -6,6 +6,7 @@
     <div class="flex gap-[10px]">
       <Support />
       <LanguageCurrency />
+      <Profile />
     </div>
   </div>
 </template>
@@ -13,6 +14,7 @@
 <script setup lang="ts">
 import LanguageCurrency from './components/LanguageCurrency.vue'
 import Logo from './components/Logo.vue'
+import Profile from './components/Profile.vue'
 import Support from './components/Support.vue'
 </script>
 
