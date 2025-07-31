@@ -20,7 +20,6 @@
   },
   "internalServerError": "Нажаль, сталася помилка. Спробуйте пізніше...",
   "authentication": {
-    "message": "Увійдіть або створіть акаунт",
     "description": "Розблокуйте преміальні нагороди з Marshrutka",
     "or": "або",
     "showPassword": "Показати пароль",
@@ -28,16 +27,31 @@
     "legalMessage": "Продовжуючи, ви прочитали і погоджуєтеся на наші",
     "termsLink": "Умови та Положення",
     "login": {
+      "message": "Увійдіть",
       "name": "Увійти",
       "google": "Увійти з Google",
       "changeFormMessage": "Не маєте акаунту?"
     },
+
     "singup": {
+      "message": "Зараєструйтеся",
+      "email": {
+        "emailExists": "Email уже використовується. Використайте інший або спробуйте увійти.",
+        "sendCodeButton": "Надіслати",
+        "verificationMessage": "Введіть верифікаційний код, який ми надіслали на ваш email:",
+        "verificationCodeError": "Наданий код не збігається з надісланим."
+      },
       "name": "Зареєструватися",
       "google": "Зареєструватися з Google",
       "changeFormMessage": "Уже маєте акаунт?",
       "firstName": "Ім'я",
-      "lastName": "Прізвище"
+      "lastName": "Прізвище",
+      "problem": "Є кілька проблем з наданими даними:",
+      "phoneNumberProblem": "·Невалідний номер телефону",
+      "dateOfBirthProblem": "·Користовачу мусить бути мінімум 18 років"
     }
+  },
+  "activeButton": {
+    "success": "Успіх!"
   }
 }

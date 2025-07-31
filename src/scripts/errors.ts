@@ -1,3 +1,4 @@
+import router from '@/router'
 import { useRouter, type Router } from 'vue-router'
 
 interface InvalidParam {
@@ -20,12 +21,15 @@ export class Problem {
   detail: string
   invalidParams?: InvalidParam[]
 
-  constructor(error: any, router: Router) {
+  constructor(error: any) {
     if (error.response && error.response.data) {
       const data: ProblemData = error.response.data
       if (data.status == 500) {
         router.push({ name: 'internalServerError' })
+      } else if (data.status == 502) {
+        router.push({ name: 'internalServerError' })
       }
+
       this.type = data.type
       this.title = data.title
       this.status = data.status

@@ -1,14 +1,15 @@
 <template>
   <button
+    type="button"
     @click="signInWithGoogle"
-    class="flex w-full bg relative rounded-xl h-[55px] items-center transition-all duration-200 cursor-pointer"
+    class="flex w-full bg relative rounded-xl justify-center h-[60px] sm:h-[55px] items-center transition-all duration-200 cursor-pointer"
   >
     <img
       src="/public/google.webp"
       alt="google"
       class="size-[40px] left-[6px] top-[75.px] bg-white p-[3px] rounded-full absolute"
     />
-    <p class="mx-auto text-white text-lg">
+    <p class="text-white text-lg ml-[40px] sm:mx-auto">
       {{ getName() }}
     </p>
   </button>
@@ -57,7 +58,7 @@ const signInWithGoogle = async () => {
                   code: response.code,
                 })
               } catch (error) {
-                const err = new Problem(error, router)
+                const err = new Problem(error)
               }
             }
           },

@@ -20,7 +20,6 @@
   },
   "internalServerError": "An error has occured, try again...",
   "authentication": {
-    "message": "Log in or create an account",
     "description": "Unlock premium rewords with Marshrutka",
     "or": "or",
     "showPassword": "Show password",
@@ -28,16 +27,30 @@
     "legalMessage": "By continuing, you have read and agree to our",
     "termsLink": "Terms and Conditions",
     "login": {
+      "message": "Log in",
       "name": "Log in",
       "google": "Log in with Google",
       "changeFormMessage": "Don't have an account?"
     },
     "singup": {
+      "email": {
+        "emailExists": "Email already exists. Use onther one or try to log in.",
+        "sendCodeButton": "Send",
+        "verificationMessage": "Provide verification code, that we have sent to your email adress:",
+        "verificationCodeError": "Provided code differs from the sent one."
+      },
+      "message": "Sing up",
       "name": "Sing up",
       "google": "Sing up with Google",
       "changeFormMessage": "Already have an account?",
       "firstName": "First name",
-      "lastName": "Last name"
+      "lastName": "Last name",
+      "problem": "There are a few problems with provided data:",
+      "phoneNumberProblem": "·Invalid phone number",
+      "dateOfBirthProblem": "·The user has to be at least 18 years old"
     }
+  },
+  "activeButton": {
+    "success": "Успіх!"
   }
 }

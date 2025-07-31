@@ -9,6 +9,7 @@ export const useAppStore = defineStore('app', {
     loggedIn: false,
     currency: usd,
     language: english,
+    userImage: '',
   }),
 
   actions: {

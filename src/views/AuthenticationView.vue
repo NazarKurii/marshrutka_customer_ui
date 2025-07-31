@@ -5,13 +5,10 @@
   </div>
   <div class="flex py-[20px] max-w-[550px] w-full items-center flex-col px-[10px]">
     <Logo />
-    <p class="text-3xl text-white mt-[40px] font-bold text-center">
-      {{ t('authentication.message') }}
-    </p>
-    <p class="text-gray-500 text-lg mt-[10px] text-center">{{ t('authentication.description') }}</p>
+
     <RouterView></RouterView>
     <div class="flex flex-col gap-[5px] items-center">
-      <p class="text-gray-400">{{ t('authentication.legalMessage') }}</p>
+      <p class="text-gray-400 text-center">{{ t('authentication.legalMessage') }}</p>
       <a
         class="text-blue-500 underline hover:text-blue-600 cursor-pointer"
         @click="router.push({ name: 'legalPolicy' })"
@@ -27,7 +24,7 @@ import GoBack from '@/components/global/go_back/GoBack.vue'
 import LanguageCurrency from '@/components/global/header/components/LanguageCurrency.vue'
 import Logo from '@/components/global/header/components/Logo.vue'
 import LoginForm from '@/components/authentication/LoginForm.vue'
-import SingUpForm from '@/components/authentication/SingUpForm.vue'
+import SingUpForm from '@/components/authentication/singup/SingUpForm.vue'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { appUrl } from '@/scripts/app'

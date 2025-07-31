@@ -47,15 +47,25 @@
       v-model="localNumber"
       type="tel"
       placeholder="123 456 7890"
-      class="flex-1 rounded-lg input tracking-widest bg-zinc-800 h-[45px] text-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:max-w-[195px] w-full"
+      :class="{
+        placeholder: !violated,
+        'placeholder-red-500': violated,
+        'text-red-500': invalid,
+        'text-white': !invalid,
+      }"
+      class="flex-1 rounded-lg input tracking-widest bg-zinc-800 h-[45px] p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:max-w-[195px] w-full"
     />
   </div>
 </template>
 
 <script setup lang="ts">
+const props = defineProps<{
+  violated: boolean
+  invalid: boolean
+}>()
 import { watch, ref } from 'vue'
 
-const countryCode = ref('+1')
+const countryCode = ref('+380')
 const localNumber = ref('')
 
 // Watch and update the user's full phone number reactively
@@ -91,10 +101,9 @@ input:hover {
   border: 2px solid transparent;
   border-radius: 10px;
   outline: none;
-  color: white;
   transition: 0.5s ease;
 }
-.input::placeholder {
+.placeholder::placeholder {
   color: #94a3b8;
 }
 </style>

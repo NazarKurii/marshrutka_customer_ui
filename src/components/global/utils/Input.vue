@@ -15,11 +15,15 @@
     <input
     :class="{
       'pl-[3rem] pr-[15px]':imagePath,
-      'px-[15px]':!imagePath
+      'px-[15px]':!imagePath,
+      'placeholderColor': !violated,
+      'placeholder-red-500': violated,
+      'text-white': !invalid,
+      'text-red-500': invalid
 
     }"
       v-model="model"
-      class="input bg-zinc-800"
+      class="input bg-zinc-800 "
       :type="isPassword? showPassword?'text' :type:type"
       :placeholder="name"
       :autocomplete="'off'"
@@ -55,8 +59,11 @@ withDefaults(
     name: string
     type: string
     isPassword?: boolean
+    violated?: boolean
+     invalid: boolean
   }>(),
   {
+    violated: false,
     imagePath: '',
     isPassword: false
   }
@@ -97,7 +104,7 @@ const { t } = useI18n()
   transition: 0.5s ease;
 }
 
-.input::placeholder {
+.placeholderColor::placeholder {
   color: #94a3b8;
 }
 
